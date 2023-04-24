@@ -1,0 +1,17 @@
+
+<a href='/movies' class='btn btn-primary'>Back to Movies</a>
+<h1>{{movieDetails.title}}</h1>
+<div>
+  <img src='{{movieDetails.image}}' alt='{{movieDetails.title}}' />
+  <p><strong>Director:</strong> {{movieDetails.director}}</p>
+<ul>
+  {{#each movieDetails.stars}}
+    <li>{{this}}</li>
+  {{/each}}
+  <p><strong>Description:</strong> {{movieDetails.description}}</p>
+  <ul>
+  {{#each movieDetails.showtimes}}
+    <li>{{this}}</li>
+  {{/each}}
+
+</div>
